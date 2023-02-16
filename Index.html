@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="css/style.prefix.css" />
+    <link rel="icon" type="image/png" href="img/mushroom.png" />
+  </head>
+
+  <body>
+    <div class="enter-players">
+      <div class="memory"><h1>The Memory game</h1></div>
+      <form id="player-form">
+        <div class="player-container">
+          <label class="etiqueta" for="player1">Player 1</label>
+          <input
+            type="text"
+            placeholder="enter name"
+            name="player1"
+            id="player1"
+            class="input-field"
+          />
+        </div>
+        <div class="player-container">
+          <label class="etiqueta" for="player2">Player 2</label>
+          <input
+            type="text"
+            placeholder="enter name"
+            name="player2"
+            id="player2"
+            class="input-field"
+          />
+        </div>
+
+        <input type="submit" class="submit-btn" value="Start Game" />
+      </form>
+    </div>
+
+    <div id="game" class="juego hidden">
+      <div class="board___player-turn"></div>
+      <div class="board___player-score"></div>
+    </div>
+    <div class="reset reset hidden">
+      <div class="reset__text"></div>
+      <button class="replay-btn" value="replay">
+        <span class="clear-board">Clear Board</span>
+      </button>
+    </div>
+
+    <script src="js/script.babel.js"></script>
+  </body>
+</html>
